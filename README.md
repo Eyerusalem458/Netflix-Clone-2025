@@ -6,53 +6,9 @@ The project replicates Netflix UI features including banners, movie rows, horizo
 🚀 Live Demo
 
 👉 Add your GitHub Pages link here after deployment
-https://yourusername.github.io/your-repo-name
+https://github.com/Eyerusalem458/Netflix-Clone-2025
 
-📂 Project Structure
-src/
-├── assets/
-│ ├── CSS/
-│ │ └── style.css
-│ └── Images/
-│  
- │
-├── Components/
-│ ├── Header/
-│ │ ├── Header.jsx
-│ │ └── Header.module.css
-│ │
-│ ├── Footer/
-│ │ ├── Footer.jsx
-│ │ └── Footer.module.css
-│ │
-│ ├── Banner/
-│ │ ├── Banner.jsx
-│ │ └── Banner.module.css
-│ │
-│ ├── Rows/
-│ │ ├── Row/
-│ │ │ ├── Row.jsx
-│ │ │ └── Row.css
-│ │ │
-│ │ ├── RowList/
-│ │ │ ├── RowList.jsx
-│ │ │  
- │ │
-│ └── ...
-│
-├── Pages/
-│ ├── Home/
-│ │ └── Home.jsx
-│
-├── Utils/
-│ ├── Axios.jsx
-│ └── Requests.jsx
-│
-├── App.jsx
-└── main.jsx
 
-public/
-└── favicon.ico
 
 📸 Features
 
