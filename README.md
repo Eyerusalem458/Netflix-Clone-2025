@@ -5,8 +5,7 @@ The project replicates Netflix UI features including banners, movie rows, horizo
 
 🚀 Live Demo
 
-👉 Add your GitHub Pages link here after deployment
-https://github.com/Eyerusalem458/Netflix-Clone-2025
+👉 https://github.com/Eyerusalem458/Netflix-Clone-2025
 
 
 
