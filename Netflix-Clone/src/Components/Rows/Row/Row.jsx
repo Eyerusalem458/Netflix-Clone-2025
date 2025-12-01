@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "../../../Utils/Axios";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
-// import styles from "./Row.module.css";
 import "./Row.css";
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovie] = useState([]);
