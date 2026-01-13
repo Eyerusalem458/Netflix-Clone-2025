@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 
 function Disclaimer() {
-  const [visible, setVisible] = useState(() => {
-    return localStorage.getItem("disclaimerDismissed") !== "true";
-  });
+  const [visible, setVisible] = useState(true); // always visible at start
 
   const handleClose = () => {
-    setVisible(false);
-    localStorage.setItem("disclaimerDismissed", "true");
+    setVisible(false); // hide immediately when clicked
   };
 
-  if (!visible) return null;
+  if (!visible) return null; // hide component when not visible
 
   return (
     <div
