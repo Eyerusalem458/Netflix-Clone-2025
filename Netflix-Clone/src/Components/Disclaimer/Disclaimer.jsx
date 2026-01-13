@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 function Disclaimer() {
-  const [visible, setVisible] = useState(true); // always visible at start
+  const [visible, setVisible] = useState(true);
 
   const handleClose = () => {
-    setVisible(false); // hide immediately when clicked
+    setVisible(false);
   };
 
-  if (!visible) return null; // hide component when not visible
+  if (!visible) return null;
 
   return (
     <div
@@ -16,27 +16,30 @@ function Disclaimer() {
         color: "#000",
         fontWeight: "bold",
         textAlign: "center",
-        padding: "10px 40px 10px 10px",
+        padding: "15px 60px 15px 15px",
         fontSize: "16px",
         position: "relative",
+        zIndex: 1000, // make sure it's above other elements
       }}
     >
       DISCLAIMER: THIS PAGE WAS MADE AS A PERSONAL EDUCATIONAL PROJECT. This is
       NOT the official site of the company or brand. The creator is NOT
       affiliated with the company or brand in any way.
+      {/* Close button */}
       <button
         onClick={handleClose}
         style={{
           position: "absolute",
-          right: "10px",
-          top: "5px",
+          top: "50%",
+          right: "15px",
+          transform: "translateY(-50%)",
           background: "transparent",
           border: "none",
           fontWeight: "bold",
           fontSize: "18px",
           cursor: "pointer",
+          zIndex: 1001, // above parent
         }}
-        aria-label="Close disclaimer"
       >
         ✖
       </button>
