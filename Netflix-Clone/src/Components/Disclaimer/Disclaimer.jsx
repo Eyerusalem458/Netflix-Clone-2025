@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 
 function Disclaimer() {
-  const [visible, setVisible] = useState(true); // State to track visibility
+  const [visible, setVisible] = useState(() => {
+    return localStorage.getItem("disclaimerDismissed") !== "true";
+  });
 
-  // If not visible, don't render anything
+  const handleClose = () => {
+    setVisible(false);
+    localStorage.setItem("disclaimerDismissed", "true");
+  };
+
   if (!visible) return null;
 
   return (
@@ -21,9 +27,8 @@ function Disclaimer() {
       DISCLAIMER: THIS PAGE WAS MADE AS A PERSONAL EDUCATIONAL PROJECT. This is
       NOT the official site of the company or brand. The creator is NOT
       affiliated with the company or brand in any way.
-      {/* Close button */}
       <button
-        onClick={() => setVisible(false)}
+        onClick={handleClose}
         style={{
           position: "absolute",
           right: "10px",
